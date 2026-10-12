@@ -5,7 +5,7 @@ package Veterinaria;
  * Clase CONSULTA
  */
 
-public class Consulta {
+public class Consulta implements Resumible {
     ///ATRIBUTOS
     private String fecha;
     private String motivo;
@@ -99,6 +99,7 @@ public class Consulta {
         this.motivo = motivo;
     }
     
+    @Override
     public void mostrarResumen(){
         System.out.println("Fecha: " + fecha);
         System.out.println("Motivo: " + motivo);

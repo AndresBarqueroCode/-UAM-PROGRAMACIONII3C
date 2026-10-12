@@ -43,5 +43,11 @@ public class Cliente extends Persona {
         }
     }
       
-   ///METODOS
+    ///METODOS
+    @Override
+    public void mostrarResumen() {
+        System.out.println("Identificacion: " + identificacion);
+        System.out.println("Nonbre: " + super.nombre);
+        System.out.println("Telefono: " + telefono);
+    }
 }

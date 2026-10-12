@@ -5,7 +5,7 @@ package Veterinaria;
  * Clase PERSONA
  */
 
-public abstract class Persona {
+public abstract class Persona implements Resumible {
     ///ATRIBUTOS
     protected String nombre;
     
@@ -28,4 +28,5 @@ public abstract class Persona {
         this.nombre = nombre;
     }
     ///METODOS
+    
 }

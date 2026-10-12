@@ -34,4 +34,10 @@ public class Veterinario extends Persona {
         this.especialidad = especialidad;
     }
     
+    @Override
+    public void mostrarResumen(){
+        System.out.println("Codigo: " + codigo);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Especialidad: " + especialidad);
+    }
 }
