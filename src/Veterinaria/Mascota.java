@@ -5,7 +5,7 @@ package Veterinaria;
  * Clase MASCOTA
  */
 
-public class Mascota {
+public class Mascota implements Resumible {
     ///ATRIBUTOS
     private String nombre;
     private String especie; 
@@ -48,6 +48,7 @@ public class Mascota {
     
     ///METODOS
     ///METODO 1: Imprime un resumen de la informacion de la Mascota y sus atributos.
+    @Override
     public void mostrarResumen(){
         System.out.println("Mascota:" + nombre);
         System.out.println("Especie:" + especie);
